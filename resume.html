@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume - Kurt Christian C. Sanchez</title>
+    <link rel="stylesheet" href="css/resume.css">
+</head>
+<body>
+
+<body>
+    <nav>
+      <!-- Navigation Bar -->
+      <nav>
+        <div class="nav-left">
+            <a href="home.html">MY PORTFOLIO</a>
+            
+        </div>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            
+        </ul>
+    </nav>
+
+    </nav>
+
+    <div class="main-content">
+        <!-- Resume Section -->
+        <section id="resume">
+    
+            <div class="resume-wrapper">
+                <!-- Resume Preview -->
+                <div class="resume-container">
+                    <iframe src="resume/Kurt_Sanchez_Resume.pdf" frameborder="0"></iframe>
+                </div>
+    
+                <!-- Download Section -->
+                <div class="download-container">
+                    <h2>DOWNLOAD MY RESUME</h2>
+                    <p>Click the button below to download a copy of my resume.</p>
+                    <a href="resume/Kurt_Sanchez_Resume.pdf" class="download-btn" id="downloadResume">
+                        Download Resume
+                    </a>
+                </div>
+            </div>
+        </section>
+    
+        <!-- JavaScript for Instant Download -->
+        <script>
+            document.getElementById("downloadResume").addEventListener("click", function (event) {
+                event.preventDefault();
+                const link = document.createElement("a");
+                link.href = "resume/Kurt_Sanchez_Resume.pdf";
+                link.download = "Kurt_Sanchez_Resume.pdf";
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            });
+        </script>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Kurt Sanchez. All Rights Reserved.</p>
+    </footer>
+</body>
+
+<script src="js/script.js"></script>
+
+
+</body>
+</html>

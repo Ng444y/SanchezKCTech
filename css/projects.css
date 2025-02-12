@@ -1,0 +1,233 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    color: #ffffff; 
+}
+
+
+/* Body Styling */
+body {
+    font-family: "Bebas Neue", sans-serif;
+    background-color: #36454F;
+    color: #000000;
+    padding: 20px;
+    margin: 0 100px;
+}
+
+/* Navigation Bar */
+nav {
+    width: 100%;
+    padding: 15px 0;
+    background-color: #F9F9F9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 15px 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+.nav-left a {
+    text-decoration: none; 
+    color: black;       
+    font-size: 26px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-left a:hover {
+    color: #5a67d8;
+}
+
+/* Navigation Left (Title/Logo) */
+.nav-left {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* Navigation Links */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 24px;
+    font-weight: 500;
+    transition: color 0.5s ease;
+}
+
+nav ul li a:hover {
+    color: #5a67d8;
+}
+
+
+/* Navigation Bar (Retained from Your Code) */
+nav {
+    width: 100%;
+    padding: 15px 0;
+    background-color: #F8E7D1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 15px 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+.nav-left a {
+    text-decoration: none;  
+    color: black;        
+    font-size: 26px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #5a67d8;
+}
+
+
+/* Projects Section */
+.projects {
+    padding: 100px 100px;
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.projects-container {
+    background-color: #F9FAFB;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 33%; 
+}
+
+.projects-container h2 {
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    margin: 0;
+}
+
+
+/* Individual Project Cards */
+.project {
+    display: flex;
+    align-items: center;
+    background: #F9FAFB;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project img {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.project-details {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.project h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project p {
+    font-size: 16px;
+    color: rgb(0, 0, 0)
+}
+
+/* Project Links */
+.project-links {
+    margin-top: 10px;
+}
+
+.project-links .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background 0.3s ease;
+}
+
+.project-links .btn:hover {
+    opacity: 0.8;
+}
+
+.btn {
+    background: #5a67d8;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .project {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project img {
+        width: 100%;
+    }
+
+    .project-details {
+        margin-left: 0;
+    }
+}
+
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+/* This pushes the footer down */
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+    font-size: 14px;
+    width: 100%;
+}
