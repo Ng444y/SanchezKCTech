@@ -3,74 +3,222 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kurt Sanchez - Web Developer specializing in sleek, responsive, and high-performance websites">
     <title>Kurt Sanchez | Web Developer</title>
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Global Styles -->
+    <link rel="stylesheet" href="css/navbar.css"> <!-- Navbar Styles -->
+    <link rel="stylesheet" href="css/footer.css"> <!-- Footer Styles -->
+    <link rel="stylesheet" href="css/home.css"> <!-- Page-Specific Styles -->
+    <link rel="stylesheet" href="css/dark-mode.css"> <!-- Dark Mode Styles -->
 </head>
 <body>
-
-    <body>
-        <nav>
-            <div class="nav-left">
-                <a href="home.html">MY PORTFOLIO</a>
-            </div>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                      <!-- Dark Mode Toggle -->
-                <label class="switch">
-                    <input type="checkbox" id="theme-toggle">
-                    <span class="slider"></span>
-                </label>
-            </ul>
-           
-        </nav>
     
-        <div class="main-content">
-            <section class="hero">
-                <div class="hero-text">
-                    <h1>HI, I'M <span>KURT CHRISTIAN SANCHEZ</span></h1>
-                    <h2>WEB DEVELOPER</h2>
-                    <p>
-                        I design and develop sleek, responsive, and high-performance websites that bring your ideas to life. Let’s collaborate to build something exceptional.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="resume.html" class="btn primary">Hire Me</a> 
-                        <a href="contact.html" class="btn secondary">Let's Talk</a> 
+    <!-- Navbar Placeholder -->
+    <div id="navbar-container"></div>
+    
+    <main class="main-content">
+        <section class="hero">
+            <div class="hero-text">
+                <h1>HI, I'M <span class="highlight">KURT CHRISTIAN SANCHEZ</span></h1>
+                <h2>WEB DEVELOPER</h2>
+                <p>
+                    I design and develop sleek, responsive, and high-performance websites that bring your ideas to life. Let's collaborate to build something exceptional.
+                </p>
+                <div class="hero-buttons">
+                    <a href="resume.html" class="btn primary"><i class="fas fa-file-alt"></i> Hire Me</a> 
+                    <a href="contact.html" class="btn secondary"><i class="fas fa-comment-dots"></i> Let's Talk</a> 
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <img src="logo/profile-image.jpg" alt="Kurt Sanchez, Web Developer" class="profile-img">
+            </div>
+        </section>
+        
+        <!-- Redesigned Skills Section -->
+        <section class="skills-section">
+            <h2 class="section-title">My Skills</h2>
+            
+            <div class="skills-container">
+                <!-- Frontend Development -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Frontend Development</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-mobile-alt"></i>
+                            <span>Responsive Design</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Backend Development -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-server"></i>
+                        <h3>Backend Development</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-server"></i>
+                            <span>Express</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-database"></i>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tools & Others -->
+                <div class="skill-category">
+                    <div class="category-header">
+                        <i class="fas fa-paint-brush"></i>
+                        <h3>UI/UX Design</h3>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <i class="fab fa-figma"></i>
+                            <span>Figma</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-paint-brush"></i>
+                            <span>Adobe XD</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-code-branch"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-terminal"></i>
+                            <span>Command Line</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        
+        <!-- Featured Projects Section (Carousel) -->
+        <section class="featured-projects">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <!-- Project 1 -->
+                    <div class="carousel-slide active">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="projects/cg1.png" alt="CODEGEEKS Project Screenshot">
+                            </div>
+                            <div class="project-info active">
+                                <h3>CODEGEEKS</h3>
+                                <p>A dynamic web development community where developers collaborate, share projects, and learn together.</p>
+                                <div class="project-tech">
+                                    <span>React</span>
+                                    <span>Node.js</span>
+                                    <span>MongoDB</span>
+                                </div>
+                                <a href="https://codegeeks.site" class="btn primary" target="_blank">VIEW PROJECT <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
                     </div>
                     
+                    <!-- Project 2 -->
+                    <div class="carousel-slide">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="projects/hs1.png" alt="HUBSPOT COFFEE Project Screenshot">
+                            </div>
+                            <div class="project-info">
+                                <h3>HUBSPOT COFFEE</h3>
+                                <p>A modern coffee shop website featuring an elegant UI and seamless online ordering experience.</p>
+                                <div class="project-tech">
+                                    <span>HTML/CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>Responsive Design</span>
+                                </div>
+                                <a href="https://hubspotcoffee.netlify.app" class="btn primary" target="_blank">VIEW PROJECT <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 3 - Noah's Ark Shelter -->
+                    <div class="carousel-slide">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="projects/nas1.png" alt="Noah's Ark Shelter Project Screenshot">
+                            </div>
+                            <div class="project-info">
+                                <h3>NOAH'S ARK SHELTER</h3>
+                                <p>A comprehensive platform for animal shelter management, adoption tracking, and volunteer coordination.</p>
+                                <div class="project-tech">
+                                    <span>React</span>
+                                    <span>Node.js</span>
+                                    <span>MongoDB</span>
+                                    <span>Redux</span>
+                                </div>
+                                <a href="https://noahsark-shelter.netlify.app/" class="btn primary" target="_blank">VIEW PROJECT <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </section>
+                
+                <!-- Carousel Controls -->
+                <button class="carousel-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="carousel-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+                
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators">
+                    <span class="indicator active" data-slide="0"></span>
+                    <span class="indicator" data-slide="1"></span>
+                    <span class="indicator" data-slide="2"></span>
+                </div>
+            </div>
             
-            <!-- Featured Projects Section (Place This After Your Hero Section) -->
-            <section class="featured-projects">
-          
-                <div class="projects-container">
-                    <div class="project-card">
-                        <img src="projects/cg1.png" alt="CODEGEEKS">
-                        <h3>CODEGEEKS</h3>
-                        <p>A dynamic web development community where developers collaborate, share projects, and learn together.</p>
-                        <a href="https://codegeeks.site" class="btn primary">VIEW PROJECT</a>
-                    </div>
-                    <div class="project-card">
-                        <img src="projects/hs1.png" alt="HUBSPOT COFFEE">
-                        <h3>HUBSPOT COFFEE</h3>
-                        <p>A modern coffee shop website featuring an elegant UI and seamless online ordering experience.</p>
-                        <a href="https://github.com/Ng444y/webpub-final-req" class="btn primary">VIEW PROJECT</a>
-                    </div>
-                </div>
-            </section>
-
-
-        </div>
+            <div class="view-all-container">
+                <a href="projects.html" class="btn secondary">View All Projects <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </section>
+        
+        <!-- Contact CTA -->
+        <section class="contact-cta">
+            <h2>Ready to work together?</h2>
+            <p>Let's turn your ideas into reality with modern web solutions.</p>
+            <a href="contact.html" class="btn primary">Get in Touch <i class="fas fa-paper-plane"></i></a>
+        </section>
+    </main>
     
-        <footer>
-            <p>&copy; 2025 Kurt Sanchez. All rights reserved.</p>
-        </footer>
-    </body>
-
+    <!-- Footer Placeholder -->
+    <div id="footer-container"></div>
+    
     <script src="js/script.js"></script>
-    
 </body>
 </html>

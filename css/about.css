@@ -1,30 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
 /* General Styles */
+:root {
+    --primary-color: #18442A;
+}
+
+/* Nav */
+nav {
+    width: 100%;
+    padding: 1rem 5%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: var(--shadow);
+    z-index: 1000;
+    transition: var(--transition);
+}
+
+.nav-left {
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.nav-left a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: var(--transition);
+}
+
+.nav-left a:hover {
+    color: var(--primary-color);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: var(--primary-color);
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Nav */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 h1 {
-    color: #ffffff; 
-    margin-top: 30px;
+    color: black; 
+    margin-top: -40px;
+    font-family: "Montserrat", sans-serif;
 }
 
 p1 {
-    color: #ffffff;
+    color: black;
     font-size: 18px;
     line-height: 1.6;
+    font-family: "Montserrat", sans-serif;
 }
 
 p2 {
-    color: #ffffff;
+    color: black;
     font-size: 18px;
     line-height: 1.6;
+    font-family: "Montserrat", sans-serif;
 }
 
 p3 {
-    color: #ffffff; 
+    color: black; 
     font-size: 18px;
     line-height: 1.6;
+    font-family: "Montserrat", sans-serif;
 }
 
 .compressed-text {
@@ -34,76 +113,17 @@ p3 {
     margin: 0 auto; 
     padding: 15px 25px;
     text-align:center;
-    color: #ffffff; 
+    color: black; 
+    font-family: "Montserrat", sans-serif;
 }
-
-
 
 /* Body Styling */
 body {
-    font-family: "Poppins", sans-serif;
-    background-color: #36454F;
-    color: #000000;
+    font-family: "Montserrat", sans-serif;
+    background-color: white;
+    color: black;
     padding: 20px;
     margin: 0 100px;
-}
-
-/* Navigation Bar */
-nav {
-    width: 100%;
-    padding: 15px 0;
-    background-color: #F8E7D1;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 15px 100px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-}
-.nav-left a {
-    text-decoration: none; 
-    color: black;       
-    font-size: 26px;
-    font-weight: bold;
-    transition: color 0.3s ease;
-}
-
-.nav-left a:hover {
-    color: #bf0f0f; /* Change color on hover */
-}
-
-/* Navigation Left (Title/Logo) */
-.nav-left {
-    font-size: 26px;
-    font-weight: bold;
-}
-
-/* Navigation Links */
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    gap: 30px;
-}
-
-nav ul li {
-    list-style: none;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: black;
-    font-size: 24px;
-    font-weight: 500;
-    transition: color 0.5s ease;
-}
-
-nav ul li a:hover {
-    color: #5a67d8;
 }
 
 /* Contact Section */
@@ -115,32 +135,30 @@ nav ul li a:hover {
     padding: 50px;
 }
 
-
-
-
-
 /* Bio Section */
 #bio {
     width: 100%;
-    padding: 50px 20px;
+    padding: 100px 50px;
     text-align: center;
 }
 
 #bio h1 {
     font-size: 60px;
     margin-bottom: 20px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
+    padding-left: 120px;
+    padding-right: 120px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
 }
 
 #bio p {
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-style: oblique;
     text-align: center;
     padding: 0 150px;
-    line-height: 1.8;
-    color: #444;
+    line-height: 2.0;
+    color: #000000; /* Slightly softened from #444 */
 }
 
 /* Separator Line */
@@ -150,23 +168,21 @@ nav ul li a:hover {
     text-align: left;
     margin-left: 0;
     margin-right: 0;
-    margin-top: -30px;
-
+    margin-top: -100px;
 }
-
 
 /* Skills Section */
 #skills {
-    background-color: #eae9e9;
+    background-color: #ffffff;
     padding: 50px 20px;
     text-align: center;
 }
 
 #skills h2 {
     font-size: 32px;
-    font-family: "Poppins", sans-serif;
+    font-family: "Montserrat", sans-serif;
     margin-bottom: 30px;
-    color: #333;
+    color: #030303;
 }
 
 /* Skill Container */
@@ -179,6 +195,7 @@ nav ul li a:hover {
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 8px;
+    font-family: "Montserrat", sans-serif;
 }
 
 /* Progress Bar Background */
@@ -224,19 +241,18 @@ nav ul li a:hover {
     transition: width 1.5s ease-in-out;
 }
 
-
 /* Divider Line Between Sections */
 .section-divider {
     width: 80%;
-    height: 2px;
-    background-color: #000000; /* Dark gray line */
-    margin: 40px auto; /* Adds spacing and centers the line */
-    opacity: 0.5; /* Slight transparency */
+    height: 4px;
+    background-color: #18442A; /* Dark gray line */
+    margin: 20px auto; /* Adds spacing and centers the line */
+    opacity: 1; /* Slight transparency */
 }
 
 /* Accreditations & Achievements */
 #certifications {
-    background-color: #eae9e9;
+    background-color: #ffffff;
     padding: 30px;
     margin-bottom: 50px;
     text-align: center;
@@ -245,7 +261,7 @@ nav ul li a:hover {
 #certifications h2 {
     text-align: center;
     margin-bottom: 20px;
-    font-family: "Bebas Neue", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 28px;
     font-weight: 600;
 }
@@ -253,7 +269,7 @@ nav ul li a:hover {
 /* Carousel Styling */
 .carousel {
     overflow: hidden;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     position: relative;
 }
@@ -264,12 +280,12 @@ nav ul li a:hover {
     grid-auto-columns: 250px;
     gap: 20px;
     justify-items: stretch;
-    animation: scrollAnimation 12s linear infinite;
+    animation: scrollAnimation 14s linear infinite;
 }
 
 /* Individual Cards */
 .card {
-    background: #fff;
+    background: #45644A ;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 15px;
@@ -291,12 +307,12 @@ nav ul li a:hover {
 .card span {
     display: block;
     margin-top: 10px;
-    font-family: "Poppins", system-ui;
+    font-family: "Montserrat", sans-serif;
     font-size: 14px;
     font-weight: 500;
     color: #333;
     text-decoration: none;
-    border-bottom: 1px solid black; 
+    border-bottom: 1px solid rgb(243, 243, 243); 
     display: inline-block; 
     padding-bottom: 1px; 
 }
@@ -313,9 +329,9 @@ nav ul li a:hover {
 /* Description */
 
 .desc {
-    font-family: "Poppins", system-ui;
+    font-family: "Montserrat", sans-serif;
     font-weight: 400;
-    font-style: normal;
+    font-style: oblique;
 }
 
 .desc p {
@@ -324,11 +340,12 @@ nav ul li a:hover {
     padding: -40px;
     padding-left: 120px;
     padding-right: 120px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .more {
-    background-color: #5a67d8;
-    color: white;
+    background-color: #18442A;
+    color: rgb(92, 31, 31);
     border: none;
     border-radius: 50px;
     padding: 10px 20px;
@@ -340,37 +357,15 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     margin: 30px auto; 
+    font-family: "Montserrat", sans-serif;
 }
 
 .more a{
     text-decoration: none;
     color: #F9F9F9;
+    font-family: "Montserrat", sans-serif;
 }
 
 .more:hover {
     opacity: 0.8;
-}
-
-
-/* Make sure the page fills the screen */
-html, body {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-}
-
-/* Main content grows to push footer down */
-.main-content {
-    flex: 1;
-}
-
-/* Footer stays at the bottom */
-footer {
-    text-align: center;
-    padding: 20px;
-    background: #222;
-    color: white;
-    font-size: 14px;
-    width: 100%;
 }

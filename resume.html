@@ -4,33 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume - Kurt Christian C. Sanchez</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/resume.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<body>
-    <nav>
-      <!-- Navigation Bar -->
-      <nav>
-        <div class="nav-left">
-            <a href="home.html">MY PORTFOLIO</a>
-            
-        </div>
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            
-        </ul>
-    </nav>
-
-    </nav>
+    <!-- Fixed Navbar -->
+    <div id="navbar-container"></div>
 
     <div class="main-content">
         <!-- Resume Section -->
         <section id="resume">
-    
             <div class="resume-wrapper">
                 <!-- Resume Preview -->
                 <div class="resume-container">
@@ -39,36 +28,20 @@
     
                 <!-- Download Section -->
                 <div class="download-container">
-                    <h2>DOWNLOAD MY RESUME</h2>
+                    <h2>Download My Resume</h2>
                     <p>Click the button below to download a copy of my resume.</p>
-                    <a href="resume/Kurt_Sanchez_Resume.pdf" class="download-btn" id="downloadResume">
+                    <a href="resume/Kurt_Sanchez_Resume.pdf" class="download-btn" download>
                         Download Resume
                     </a>
                 </div>
             </div>
         </section>
-    
-        <!-- JavaScript for Instant Download -->
-        <script>
-            document.getElementById("downloadResume").addEventListener("click", function (event) {
-                event.preventDefault();
-                const link = document.createElement("a");
-                link.href = "resume/Kurt_Sanchez_Resume.pdf";
-                link.download = "Kurt_Sanchez_Resume.pdf";
-                document.body.appendChild(link);
-                link.click();
-                document.body.removeChild(link);
-            });
-        </script>
     </div>
 
-    <footer>
-        <p>&copy; 2025 Kurt Sanchez. All Rights Reserved.</p>
-    </footer>
-</body>
 
-<script src="js/script.js"></script>
+    <!-- Fixed Footer -->
+    <div id="footer-container"></div>
 
-
+    <script src="js/script.js"></script>
 </body>
 </html>

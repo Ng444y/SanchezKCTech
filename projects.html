@@ -3,68 +3,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Me - Kurt Christian C. Sanchez</title>
+    <title>Projects - Kurt Christian C. Sanchez</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/projects-carousel.css">
+    <link rel="stylesheet" href="css/dark-mode.css">
+    <script src="js/footer-loader.js" defer></script>
 </head>
-
 <body>
-        <body>
-            <nav>
-                <div class="nav-left">
-                    <a href="home.html">MY PORTFOLIO</a>
+    <!-- Navbar Placeholder -->
+    <div id="navbar-container"></div>
+    
+    <div class="sanchez-tech-projects">
+        <section class="projects">
+            <div class="projects-header">
+                <h2>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-code">
+                        <polyline points="16 18 22 12 16 6"></polyline>
+                        <polyline points="8 6 2 12 8 18"></polyline>
+                    </svg>
+                    My Projects
+                </h2>
+            </div>
+            
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-slide active">
+                        <img src="projects/cg1.png" alt="CODEGEEKS Project">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="projects/hs1.png" alt="HubSpot Project">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="projects/nas1.png" alt="Noah's Ark Shelter Project">
+                    </div>
+                    
+                    <button class="carousel-btn prev-btn" aria-label="Previous Project">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M15 18l-6-6 6-6"/>
+                        </svg>
+                    </button>
+                    <button class="carousel-btn next-btn" aria-label="Next Project">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 18l6-6-6-6"/>
+                        </svg>
+                    </button>
                 </div>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="projects.html" class="active">Projects</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="main-content">
-               <!-- Main Content -->
-    <section class="projects">
-        <div class="projects-container">
-            <h2>MY PROJECTS</h2>
-        </div>
-
-        <!-- Project 1 -->
-        <div class="project">
-            <img src="projects/cg1.png" alt="Project 1">
-            <div class="project-details">
-                <h3>CODEGEEKS</h3>
-                <p>
-                    The CODEGEEKS Website is a sleek, responsive project built with WordPress using Elementor, as part of our Web Search Engine Optimization coursework. In a team of four, I handled the announcement page, ensuring smooth animations, dark mode, and a structured layout.
-                </p>
-                <div class="project-links">
-                    <a href="https://codegeeks.site" target="_blank" class="btn">🔗LIVE DEMO</a>
-                    <a href="https://codegeeks.site/wp-admin/post.php?post=564&action=elementor" target="_blank" class="btn">📂 WORDPRESS</a>
+                
+                <div class="project-details-container">
+                    <div class="project-info active">
+                        <h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 15.13V19"/>
+                            </svg>
+                            CodeGeeks
+                        </h3>
+                        <p>
+                            The CodeGeeks Website is a sleek, responsive project built with WordPress using Elementor, as part of our Web Search Engine Optimization coursework. 
+                            In a team of four, I handled the announcement page, ensuring smooth animations, dark mode, and a structured layout.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://codegeeks.site" target="_blank" class="btn btn-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                                Live Demo
+                            </a>
+                            <a href="https://codegeeks.site/wp-admin/post.php?post=564&action=elementor" target="_blank" class="btn btn-secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+                                </svg>
+                                WordPress
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-info">
+                        <h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                            </svg>
+                            HubSpot Coffee
+                        </h3>
+                        <p>
+                            The HubSpot Coffee E-Commerce Website was our Web Publishing final project, developed by a team of three. 
+                            I was responsible for the CSS styling and documentation, contributing to a modern, interactive shopping experience.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://hubspotcoffee.netlify.app" target="_blank" class="btn btn-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/Ng444y/webpub-final-req" target="_blank" class="btn btn-secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 15.13V19"/>
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-info">
+                        <h3>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M15.05 5A5 5 0 0 1 19 8.95M15.05 1A9 9 0 0 1 23 8.94m-1 7.98v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                            Noah's Ark Shelter
+                        </h3>
+                        <p>
+                            Noah's Ark Shelter is a responsive website designed to support an animal rescue organization. 
+                            I developed the front-end using modern web technologies, focusing on user experience and accessibility for potential pet adopters.
+                        </p>
+                        <div class="project-links">
+                            <a href="https://noahsark-shelter.netlify.app/" target="_blank" class="btn btn-primary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                                    <polyline points="15 3 21 3 21 9"/>
+                                    <line x1="10" y1="14" x2="21" y2="3"/>
+                                </svg>
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/WD-301-NoahsArk/Noahs-Ark-Shelter" target="_blank" class="btn btn-secondary">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 15.13V19"/>
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="project">
-            <img src="projects/hs1.png" alt="Project 2">
-            <div class="project-details">
-                <h3>HUBSPOT</h3>
-                <p>
-                The HubSpot Coffee E-Commerce Website was our Web Publishing final project, developed by a team of three. I was responsible for the CSS styling and documentation, contributing to a modern, interactive shopping experience with authentication, product filtering, and a smooth checkout, built using React, Node.js, and MongoDB.
-                </p>
-                <div class="project-links">
-                    <a href="https://your-live-demo.com" target="_blank" class="btn">🔗 LIVE DEMO</a>
-                    <a href="https://github.com/Ng444y/webpub-final-req" target="_blank" class="btn">📂 GITHUB REPO</a>
-                </div>
-            </div>
-        </div>
-
-        
-        <script src="js/script.js"></script> 
-            </div>
-        
-            <footer>
-                <p>&copy; 2025 My Portfolio. All rights reserved.</p>
-            </footer>
-        </body>
-
+        </section>
+    </div>
+    
+    <!-- Footer Placeholder -->
+    <div id="footer-container"></div>
+    <script src="js/projects-carousel.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
