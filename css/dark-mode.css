@@ -1,0 +1,50 @@
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode .portfolio-footer {
+    background-color: #1e1e1e;
+    color: #f4f4f4;
+}
+
+body.dark-mode .footer-section h4 {
+    color: #4a90e2;
+}
+
+body.dark-mode .footer-contact a,
+body.dark-mode .footer-links a,
+body.dark-mode .footer-legal a {
+    color: #f4f4f4;
+}
+
+body.dark-mode .footer-contact a:hover,
+body.dark-mode .footer-links a:hover,
+body.dark-mode .footer-legal a:hover {
+    color: #4a90e2;
+}
+
+body.dark-mode .social-links a {
+    color: #f4f4f4;
+}
+
+body.dark-mode .social-links a:hover {
+    color: #4a90e2;
+}
+
+/* Dark Mode Toggle */
+#dark-mode-toggle {
+    background-color: transparent;
+    border: 2px solid #4a90e2;
+    color: #4a90e2;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#dark-mode-toggle.active {
+    background-color: #4a90e2;
+    color: #ffffff;
+}
